@@ -137,7 +137,7 @@ label, #toggle {
 }
 
 .profil {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	flex: 50%;
 	background: url(../img/profil.png) no-repeat;
 	min-height: 550px;
@@ -145,14 +145,46 @@ label, #toggle {
 	background-position: 50% 50%;
 	color: #fff;
 	padding: 60px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.profil p {
-	display: none;
+.layer {
+	opacity: 0;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	width: 10px;
+	height: 90%;
+	background: #000;
+	color: #fff;
+	transition: .9s ;
 }
 
-.profi:hover p{
-	display: block;
+.layer h3,
+.layer p {
+	transition: .9s ;
+	transform: scale(0.1)
+}
+
+.profil:hover .layer {
+	opacity: .8;
+	width: 90%;
+	transition: .5s ;
+	padding: 40px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.profil:hover .layer h3,
+.profil:hover .layer p {
+	text-align: center;
+	transform: scale(1);
+	transition: .9s ;
 }
 
 .box {
@@ -319,6 +351,14 @@ footer {
 /* ------------- footer -------------*/
 
 
+@media screen and (max-width: 950px) {
+
+	.portfolio {
+		padding: 80px 0;
+	}
+
+}
+
 @media screen and (max-width: 768px) {
 	
 	.navbar {
@@ -368,15 +408,19 @@ footer {
 		flex-direction: column;
 	}
 
+	.portfolio {
+		padding: 100px 60px;
+	}
+
 	.galery a {
 		flex: 50%;
 	}
 }
 
-/*@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
-	.galery a {
-		flex: 100%;
+	.portfolio {
+		padding: 80px 0;
 	}
 
-}*/
+}
