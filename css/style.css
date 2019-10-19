@@ -1,0 +1,382 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font: 16px arial narrow, montserrat, sans-serif;
+}
+
+.container {
+	/*border: 1px solid red;*/
+	width: 80%;
+	margin: auto;
+}
+
+
+/* ------------- header -------------*/
+
+header {
+	background: rgba(0,0,0,.8);
+	width: 100%;
+	position: fixed;
+}
+
+.navbar {
+	/*border: 1px solid red;*/
+	display: flex;
+}
+
+.logo {
+	/*border: 1px solid red;*/
+	flex: 60%;
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.logo img {
+	width: 25px;
+}
+
+nav {
+	/*border: 1px solid red;*/
+	flex: 40%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	/*flex-direction: row;*/
+	height: 100%;
+}
+
+nav ul li {
+	/*border: 1px solid red;*/
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 60px;
+}
+
+nav ul li a {
+	/*border: 1px solid red;*/
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-family: montserrat, sans-serif;
+}
+
+nav ul li a:hover {
+	color: rgb(255,213,0);
+	transition: .5s;
+}
+
+nav ul li a.active {
+	color: rgb(255,213,0);
+	font-weight: bold;
+}
+
+label, #toggle {
+	display: none;
+}
+
+
+/* ------------- akhir header -------------*/
+
+
+/* ------------- landing -------------*/
+
+.landing {
+	background: url(../img/people.png) no-repeat;
+	min-height: 768px;
+	/*width: 100%;*/
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+}
+
+.hero {
+	/*border: 1px solid red;*/
+	display: flex;
+	min-height: 768px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.brand {
+	/*border: 1px solid red;*/
+	font: 86px montserrat, sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 20px;
+}
+
+.hero p {
+	/*border: 1px solid red;*/
+	color: #000;
+	padding: 5px;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+}
+
+/* ------------- akhir landing -------------*/
+
+
+/* ------------- about -------------*/
+
+.about {
+	/*border: 1px solid red;*/
+	display: flex;
+	background-color: #000;
+}
+
+.profil {
+	border: 1px solid red;
+	flex: 50%;
+	background: url(../img/profil.png) no-repeat;
+	min-height: 550px;
+	background-size: cover;
+	background-position: 50% 50%;
+	color: #fff;
+	padding: 60px;
+}
+
+.profil p {
+	display: none;
+}
+
+.profi:hover p{
+	display: block;
+}
+
+.box {
+	/*border: 1px solid red;*/
+	flex: 50%;
+	padding: 60px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+h3 {
+	/*border: 1px solid red;*/
+	font: 37px montserrat, sans-serif;
+}
+
+.skillbox {
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.skillbox p {
+	/*border: 1px solid red;*/
+	flex: 70%;
+}
+
+.skillbox p:nth-child(2) {
+	display: flex;
+	flex: 30%;
+	justify-content: flex-end;
+}
+
+.skill {
+	/*border: 1px solid red;*/
+	background: #000;
+	padding: 2px;
+	border: 1px solid rgb(255,216,0);
+	border-radius: 4px;
+	flex: 1;
+}
+
+.skill-level {
+	background: rgb(255,216,0);
+	height: 10px;
+}
+
+/* ------------- akhir about -------------*/
+
+
+/* ------------- portfolio -------------*/
+
+.portfolio {
+	/*border: 1px solid red;*/
+	padding: 100px 60px;
+}	
+
+.portfolio-box {
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.portfolio-box h3 {
+	/*border: 1px solid red;*/
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin-bottom: 50px;
+	letter-spacing: 
+}
+
+.galery {
+	/*border: 1px solid red;*/
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.galery a {
+	/*border: 1px solid red;*/
+	padding: 10px 0;
+	flex: 25%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.galery a img {
+	/*border: 1px solid red;*/
+	width: 90%;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.galery a img:hover {
+	transform: scale(1.2);
+	transition: 1s;
+	box-shadow: 0 0 5px black;
+
+}
+
+/* ------------- akhir portfolio -------------*/
+
+
+/* ------------- footer -------------*/
+
+footer {
+	background-color: #000;
+	color: white;
+	min-height: 100px;
+}
+
+.footer {
+	/*border: 1px solid red;*/
+	display: flex;
+	min-height: 100px;
+}
+
+.licensi {
+	/*border: 1px solid red;*/
+	flex: 50%;
+	display: flex;
+	align-items: center;
+	word-spacing: 1px;
+	font: 16px montserrat, sans-serif;
+}
+
+.licensi p a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.licensi p a:hover {
+	color: rgb(255,216,0);
+}
+
+.sosmed {
+	/*border: 1px solid red;*/
+	flex: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.sosmed a {
+	margin: 0 0 0 10px;
+}
+
+.sosmed a img {
+	width: 30px;
+	filter: grayscale(100%);
+}
+
+.sosmed a img:hover {
+	filter: grayscale(0);
+	transition: .5s;
+}
+
+/* ------------- footer -------------*/
+
+
+@media screen and (max-width: 768px) {
+	
+	.navbar {
+		flex-wrap: wrap;
+	}
+
+	.logo {
+		flex: 80%;
+	}
+
+	label {
+		/*border: 1px solid red;*/
+		color: #fff;
+		font-size: 26px;
+		display: flex;
+		flex: 20%;
+		justify-content: flex-end;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	nav {
+		/*border: 1px solid red;*/
+		display: none;
+	}
+
+	nav ul {
+		/*border: 1px solid red;*/
+		display: flex;
+		width: 100%;
+		/*justify-content: center;*/
+		align-items: center;
+		flex-direction: column;
+	}
+
+	nav ul li {
+		/*border: 1px solid red;*/
+		margin-left: 0;
+		padding: 20px;
+	}
+
+	#toggle:checked + nav {
+		display: flex;
+	}
+
+	.about {
+		flex-direction: column;
+	}
+
+	.galery a {
+		flex: 50%;
+	}
+}
+
+/*@media screen and (max-width: 500px) {
+
+	.galery a {
+		flex: 100%;
+	}
+
+}*/
